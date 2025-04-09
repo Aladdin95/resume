@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aladdin Resume</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <style>
+        :root {
+            --background-color:  #fff;
+            --primary-color: #333;
+            --blue-color: #007bff;
+            --span-background-color: #f7f7ff;
+        }
+
+        body {
+            font-family: Tahoma;
+            font-size: 12pt;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            line-height: 1.55;
+        }
+
+        .name p {                 /* name */     
+            text-align: left;
+            font-size: 24pt;
+            font-weight: bold;
+            margin: 0;
+            color: var(--blue-color);
+        }
+
+        .container {                /* the a4 size */
+            width: 100%;
+            height: 100%;
+            max-width: 210mm;
+            max-height: 297mm;
+            margin: 0mm;
+            padding: 9mm;
+            /* overflow:hidden; */
+            box-sizing: border-box;
+        }
+
+        .section {
+            margin: 0mm;
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 0.5mm solid var(--blue-color);
+        }
+
+        .section-sub-title {
+            font-weight: bold;
+        }
+
+        .section-content {
+            margin-top: 0mm;
+        }
+
+        .section-content p {
+            margin: 0mm;
+        }
+
+        .section-content a {
+            color: var(--blue-color);
+            text-decoration: underline; /* Remove the default underline */
+            font-weight: bold;
+        }
+
+        .section-content i {
+            color: var(--blue-color);
+            width: 5mm;  /* Set a fixed width for the icons */
+            text-align: center; /* Ensure the icons are aligned within their container */
+        }
+
+        .section-content ul {
+            margin-top: 0; /* Removes the margin above the list */
+            margin-bottom: 1mm;
+            padding-left: 7mm; /* Adjusts the indentation of the list */
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.7mm;
+            margin-top: 2.7mm;
+        }
+
+        .certifications-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.7mm;
+            margin-top: 1.7mm;
+            flex-direction: column;
+        }
+
+        .skills-list span, .certifications-list span {
+            background-color: var(--span-background-color);
+            padding: 1.1mm 2.2mm;
+            border-radius: 1.1mm;
+            box-shadow: 0 0.3mm 0.7mm rgba(0, 0, 0, 0.15);
+        }
+
+        .certifications-list .provider {
+            font-size: 0.9em;
+        }
+
+        .two-columns {
+            display:flex;
+            flex-wrap: wrap;
+            gap: 7mm;
+        }
+
+        .column-left {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .column-right {
+            max-width: 37%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"  id="textContainer">
+        <div class="two-columns">
+            <div class="column-left">
+                <div class="name">
+                    <p>Aladdin Mostafa</p>
+                </div>
+                <div class="section">
+                    <div class="section-title">Summary</div>
+                    <div class="section-content">
+                        <p>Software Engineer experienced in programming with C++, Java, and Python. Skilled in algorithms, problem-solving, and software architecture. Currently developing skills in backend development with a focus on building scalable systems.</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Experience</div>
+                    <div class="section-content">
+                        <p class="section-sub-title">Freelance Software Engineer</p>
+                        <p>Oct 2022 – Present</p>
+                        <ul>
+                            <li>Researched, developed, and implemented a deep learning-based image inpainting solution for Android.</li>
+                            <li>Integrated and Optimized the model to run efficiently on mobile devices, reducing model size 50%.</li>
+                        </ul>
+
+                        <p class="section-sub-title">Senior Software Engineer, Beyond Apps Group, Egypt</p>
+                        <p>Feb 2022 – Oct 2022</p>
+                        <ul>
+                            <li>Coordinated tasks and workflows for a team of 3-4 engineers to deliver high-performance features.</li>
+                            <li>Collaborated with cross-functional teams to streamline project timelines and improve code quality.</li>
+                        </ul>
+
+                        <p class="section-sub-title">Software Engineer, Beyond Apps Group, Egypt</p>
+                        <p>Feb 2020 – Feb 2022</p>
+                        <ul>
+                            <li>Developed C++ backend for Android video processing (filters, transitions, audio, etc) using JNI communication.</li>
+                            <li>Built and integrated deep learning models for object detection and segmentation for Android.</li>
+                            <li>Implemented computer vision algorithms (OpenGL) to enhance real-time video effects.</li>
+                        </ul>
+
+                        <p class="section-sub-title">Software Engineer, Siemens, Egypt</p>
+                        <p>Jan 2019 – Feb 2020</p>
+                        <ul>
+                            <li>Developed and maintained software algorithms for semiconductor design verification.</li>
+                            <li>Applied different machine learning approaches to predict parasitic capacitance.</li>
+                            <li>Enhanced legacy code through unit testing, static code analysis, refactoring, and optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column column-right">
+                <div class="section">
+                    <div class="section-title">Contact</div>
+                    <div class="section-content">
+                        <p>
+                            <i class="fas fa-phone"></i>
+                            +201115792236
+                        </p>
+                        <p>
+                            <i class="fas fa-home"></i>
+                            El-Zaytoun, Cairo, Egypt
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:alaa2005721@gmail.com"> alaa2005721@gmail.com</a>
+                        </p>
+                        <p>
+                            <i class="fab fa-linkedin-in"></i>
+                            <a href="http://www.linkedin.com/in/aladdin95"> linkedin.com/in/aladdin95</a>
+                        </p>
+                        <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <a href="https://coursera.org/learner/aladdin">coursera.org/learner/aladdin</a>                        
+                        </p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">Education</div>
+                    <div class="section-content">
+                        <p>B.S.</p> 
+                        <p>Computer and Systems Engineering</p>
+                        <p>Ain Shams University, Cairo, Egypt</p>
+                        <p>Oct 2014 – Jun 2019</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Certifications</div>
+                    <div class="section-content certifications-list">
+                        <span>
+                            <a href="https://coursera.org/share/28b3f9e9ee0c19e23f0b1fb770105f61">Design Patterns</a>
+                            <div class="provider">University of Alberta, Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/167f56b8b8d01d4b134ed785783b6116">Object-Oriented Design</a>
+                            <div class="provider">University of Alberta, Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/b980b4df9e6e852527871e8051756d93">Java Microservices with Spring</a>
+                            <div class="provider">Google, Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/c1139f8839ec3a3d62ccd5637b0b6807">Browser Models TensorFlow.js</a>
+                            <div class="provider">Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://www.udacity.com/certificate/e/d114cd1c-d06b-11e8-850c-57d2760474a7">Self-Driving Cars Nanodegree</a>
+                            <div class="provider">9 Projects</div>
+                            <div class="provider">Udacity</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/57dd24107b5b73d016141a1d1bfd613e">Deep Learning Specialization</a>
+                            <div class="provider">5 Courses</div>
+                            <div class="provider">Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/209adca5bf582daa309211719bb60fb5">Python Specialization</a>
+                            <div class="provider">5 Courses</div>
+                            <div class="provider">University of Michigan, Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/f2ca408fc06b93491b1ceff07dcbd0c8">Data Structures</a>
+                            <div class="provider">University of CSanDiego, Coursera</div>
+                        </span>
+                        <span>
+                            <a href="https://coursera.org/share/e7ae1190a81a127415a1e61c3818b62e">Algorithms on Graphs</a>
+                            <div class="provider">University of CSanDiego, Coursera</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Skills</div>
+            <div class="section-content skills-list">
+                <span>Java</span>
+                <span>Python</span>
+                <span>C++</span>
+                <span>Spring Boot</span>
+                <span>Docker</span>
+                <span>Django</span>
+                <span>Flask</span>
+                <span>REST APIs</span>
+                <span>SQL</span>
+                <span>Microservices</span>
+                <span>TensorFlow</span>
+                <span>PyTorch</span>
+                <span>OpenCV</span>
+                <span>OpenGL</span>
+                <span>FFmpeg</span>
+            </div>
+        </div>
+    </div>
+    <!-- <script>
+        function adjustFontSize() {
+          const container = document.getElementById('textContainer');
+          const containerWidth = container.offsetWidth;
+          const containerHeight = container.offsetHeight;
+        
+          let textLength = container.innerText.length;
+          let fontSize = Math.min(containerWidth, containerHeight) / (textLength / 38); // A scaling factor
+        
+          // Apply the calculated font size
+          container.style.fontSize = fontSize + 'px';
+        }
+        
+        // Call the function to adjust font size
+        adjustFontSize();
+        
+        // Optionally, re-adjust font size when window is resized
+        window.addEventListener('resize', adjustFontSize);
+    </script> -->
+</body>
+</html>
